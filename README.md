@@ -7,7 +7,8 @@ After installing OVS create a bridge using:
 ```
 sudo ovs-vsctl add-br br0
 ```
-Configure Interla IP address for your bridge: 
+Configure internal IP address for your bridge: 
+
 ```sudo ifconfig br0 173.16.1.1 netmask 255.255.255.0 up```
 
 Create four different docker containers that are going to represnt your SDN controller, client, server, and Intel SGX (using Occlum). 
